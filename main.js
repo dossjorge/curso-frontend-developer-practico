@@ -5,10 +5,13 @@ const mobileMenu = document.querySelector('.mobile-menu');
 const shoppingCartContainer = document.querySelector('#shoppingCartContainer');
 const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');
 const cardsContainer = document.querySelector('.cards-container');
+const openProductDetailContainer = document.querySelector('#productDetail');
+const productDetailCloseIcon = document.querySelector('.product-detail-close');
 
 menuEmail.addEventListener('click', toggleDesktopMenu);
 menuHamIcon.addEventListener('click', toggleMobileMenu);
 menuCarritoIcon.addEventListener('click', toggleCarritoAside);
+productDetailCloseIcon.addEventListener('click', closeProductDetailAside);
 
 function toggleDesktopMenu(){
   const isAsideClosed = shoppingCartContainer.classList.contains('inactive');     
@@ -25,6 +28,7 @@ function toggleMobileMenu(){
   if(!isAsideClosed){
     shoppingCartContainer.classList.add('inactive');
    }
+   closeProductDetailAside();
    mobileMenu.classList.toggle('inactive');  
 }
 
@@ -34,7 +38,21 @@ function toggleCarritoAside(){
   if(!isMobileMenuClosed){
    mobileMenu.classList.add('inactive');
   }
-  shoppingCartContainer.classList.toggle('inactive'); 
+
+  const isProductDetailClosed = openProductDetailContainer.classList.contains('inactive');
+  if(!isProductDetailClosed){
+    openProductDetailContainer.classList.add('inactive');
+   }
+   shoppingCartContainer.classList.toggle('inactive'); 
+}
+
+function openProductDetailAside(){
+    shoppingCartContainer.classList.add('inactive');
+    openProductDetailContainer.classList.remove('inactive');
+}
+
+function closeProductDetailAside(){
+    openProductDetailContainer.classList.add('inactive'); 
 }
 
 const productList = [];
@@ -87,6 +105,7 @@ function renderProducts(arr){
 
         const productImg = document.createElement('img');
         productImg.setAttribute('src', product.image);
+        productImg.addEventListener('click', openProductDetailAside);
 
         const productInfo = document.createElement('div');
 
