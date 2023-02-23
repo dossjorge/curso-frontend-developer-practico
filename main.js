@@ -45,29 +45,39 @@ productList.push({
     image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    name: 'Camera photography',
+    price: 100,
+    image: 'https://images.pexels.com/photos/1983037/pexels-photo-1983037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    name: 'Book',
+    price: 30,
+    image: 'https://images.pexels.com/photos/256450/pexels-photo-256450.jpeg?auto=compress&cs=tinysrgb&w=1600',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    name: 'Tennis racket',
+    price: 40,
+    image: 'https://images.pexels.com/photos/5741299/pexels-photo-5741299.jpeg?auto=compress&cs=tinysrgb&w=1600',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    name: 'Sneakers',
+    price: 80,
+    image: 'https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg?auto=compress&cs=tinysrgb&w=1600',
 });
 productList.push({
-    name: 'Bike',
-    price: 120,
-    image: 'https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+    name: 'Armchair',
+    price: 150,
+    image: 'https://images.pexels.com/photos/6373660/pexels-photo-6373660.jpeg?auto=compress&cs=tinysrgb&w=1600',
+});
+productList.push({
+    name: 'Tennis racket',
+    price: 40,
+    image: 'https://images.pexels.com/photos/5741299/pexels-photo-5741299.jpeg?auto=compress&cs=tinysrgb&w=1600',
+});
+productList.push({
+    name: 'Sneakers',
+    price: 80,
+    image: 'https://images.pexels.com/photos/1478442/pexels-photo-1478442.jpeg?auto=compress&cs=tinysrgb&w=1600',
 });
 
 function renderProducts(arr){
